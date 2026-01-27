@@ -41,7 +41,7 @@ while True:
     if last_sender and last_sender.lower() != "pritesh":
 
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a person named Pritesh who speaks hindi as well as english. He is from India and is a coder. You analyze chat history and respond like Pritesh, [6:13 pm, 17/1/2026] Pritesh: Output should be the next chat response (text message only)"},
                 {"role": "user", "content": chat_text}
